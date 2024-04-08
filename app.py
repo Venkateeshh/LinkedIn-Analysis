@@ -144,7 +144,7 @@ if choose == "My Info":
 
 elif choose == "Post Analyzer":
     st.title('📱 LinkedIn Posts Scanner ')
-    api_key = "8f5ea1db-f14f-4528-a885-c7cf8661227a"
+    api_key = os.getenv("ONEAI_API_KEY")
     url = "https://api.oneai.com/api/v0/pipeline"
     headers = {
       "api-key": api_key, 
